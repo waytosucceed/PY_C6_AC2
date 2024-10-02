@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python-Activities</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="./logo/Logo.png" alt="Logo" class="logo" />
+        <img src="./logo/header.png" alt="Header" class="header-image" />
+    </header>
+  
+
+
+    <p style="text-align: center; font-size: 1.7rem; font-weight: bold; margin-bottom: 0;">Activity
+    👉🏽<a href="https://colab.research.google.com/drive/1pPg7OMoZWg4yjtQlOE83dxa0-5YdikG8?usp=sharing" target="_blank" class="button">Open Template</a>
+
+    </p>
+
+    <main style="display: flex; justify-content: center;">
+        <section id="activity1">
+            <h2>Activity 1: String Manipulation Tasks</h2>
+           
+            <p>Open the template and solve those python string manipulation tasks.
+                </p>
+            <button class="show-answer-btn" id="show-answer-btn1">Show Code</button>
+            <img src="./images/sol1-1.png" class="answer-img" id="answer-img1" alt="activity">
+            <img src="./images/sol1-2.png" class="answer-img" id="answer-img2" alt="activity">
+            <img src="./images/sol1-3.png" class="answer-img" id="answer-img3" alt="activity">
+            <img src="./images/sol1-4.png" class="answer-img" id="answer-img4" alt="activity">
+            <img src="./images/sol1-5.png" class="answer-img" id="answer-img5" alt="activity">
+            <img src="./images/sol1-6.png" class="answer-img" id="answer-img6" alt="activity">
+
+
+        
+         
+        </section>
+
+        <section id="activity2">
+            <h2>Activity 2: Words Counter
+            </h2>
+            <p>Write a program to take a sentence as input from the user and print the number of words in the sentence.</p>
+            <img src="./images/image2.png" class="answer-img" id="answer-img-ac2" alt="activity">
+            <button class="show-answer-btn" id="show-answer-btn2">Show Code</button>
+        </section>
+    </main>
+
+    <button class="challenge-btn" onclick="window.location.href='challenges.html'">Challenges</button>
+
+    <script>
+        // Step 1: Show or hide code for Step 1 of Activity 1
+        document.getElementById('show-answer-btn1').addEventListener('click', function() {
+        var images = document.querySelectorAll('#activity1 .answer-img'); // Select all images in Activity 1
+        var allDisplayed = Array.from(images).every(function(img) {
+            return img.style.display === 'block'; // Check if all images are displayed
+        });
+
+        if (allDisplayed) {
+            images.forEach(function(img) {
+                img.style.display = 'none'; // Hide all images
+            });
+            this.textContent = 'Show Code';
+        } else {
+            images.forEach(function(img) {
+                img.style.display = 'block'; // Show all images
+            });
+            this.textContent = 'Hide Code';
+        }
+    });
+    
+        // Step 2: Show or hide code for Step 2 of Activity 1
+        document.getElementById('show-answer-btn2').addEventListener('click', function() {
+            var img = document.getElementById('answer-img-ac2');
+            if (img.style.display === 'none' || img.style.display === '') {
+                img.style.display = 'block';
+                this.textContent = 'Hide Code';
+            } else {
+                img.style.display = 'none';
+                this.textContent = 'Show Code';
+            }
+        });
+    
+        // Step 3: Show or hide code for Step 3 of Activity 1
+        document.getElementById('show-answer-btn3').addEventListener('click', function() {
+            var img = document.getElementById('answer-img3');
+            if (img.style.display === 'none' || img.style.display === '') {
+                img.style.display = 'block';
+                this.textContent = 'Hide Code';
+            } else {
+                img.style.display = 'none';
+                this.textContent = 'Show Code';
+            }
+        });
+    
+        // Step 4: Show or hide code for Step 4 of Activity 1
+        document.getElementById('show-answer-btn4').addEventListener('click', function() {
+            var img = document.getElementById('answer-img4');
+            if (img.style.display === 'none' || img.style.display === '') {
+                img.style.display = 'block';
+                this.textContent = 'Hide Code';
+            } else {
+                img.style.display = 'none';
+                this.textContent = 'Show Code';
+            }
+        });
+    
+        // Activity 2: Show or hide code for Activity 2 - String Symmetry
+        document.getElementById('show-answer-btn5').addEventListener('click', function() {
+            var img = document.getElementById('answer-img5');
+            if (img.style.display === 'none' || img.style.display === '') {
+                img.style.display = 'block';
+                this.textContent = 'Hide Code';
+            } else {
+                img.style.display = 'none';
+                this.textContent = 'Show Code';
+            }
+        });
+    </script>
+    
+
+</body>
+</html>
